@@ -94,7 +94,7 @@ class RegisterClass:
         btn_reg = Button(frame1, text="Register Now", font=("georgia", 15, "bold"), cursor="hand2", bg="green", activebackground="lightgreen", fg="white", command=self.register_data)
         btn_reg.place(x=60, y=430, width=270, height=35)
 
-        btn_sign = Button(frame1, text="Sign In", font=("georgia", 15, "bold"), cursor="hand2", bg="green", activebackground="lightgreen", fg="white")
+        btn_sign = Button(frame1, text="Sign In", font=("georgia", 15, "bold"), cursor="hand2", bg="green", activebackground="lightgreen", fg="white",command=self.login_window)
         btn_sign.place(x=400, y=430, width=120, height=35)
 
     def clear(self):
@@ -106,7 +106,11 @@ class RegisterClass:
         self.txt_answer.delete(0, END)
         self.txt_pass.delete(0, END)
         self.txt_con_pass.delete(0, END)
-        self.var_chk.set(0)    
+        self.var_chk.set(0)
+
+    def login_window(self):
+        self.root.destroy()
+        import login
 
 
     def register_data(self):
