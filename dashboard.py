@@ -4,7 +4,7 @@ from course import CourseClass
 from student import StudentClass
 from result import ResultClass
 from report import ReportClass
-from register import RegisterClass
+# from register import RegisterClass
 class RMS:
     def __init__(self,root):
         self.root=root
@@ -12,7 +12,7 @@ class RMS:
         self.root.title(" COLLEGE RESULT MANAGEMENT SYSTEM") #THIS IS HEADER FILE
         self.root.geometry("1350x720+0+0")#THIS IS ITS ALIGNMENT 
         # self.root.minsize(1080,450)
-        self.root.maxsize(1450,720)       
+        self.root.maxsize(2450,1080)       
         self.root.config(bg="light yellow")#FOR COLOUR
         #-->this is for icons
         self.logo_dash=ImageTk.PhotoImage(file="images/download.png")
@@ -52,7 +52,7 @@ class RMS:
         #-->this is for class and object attributes instances 
 
         #-->this is for footer or bottom details
-        footer=Label(self.root,text="SAKSHAM JAISWAL\nCOLLEGE RESULT MANAGEMENT SYSTEM\nContact Us for any Technical Issue:983801XXXX ",font=("goudy old style",12,"bold"),bg="#228B22",fg="BLACK").pack(side=BOTTOM,fill=X)
+        footer=Label(self.root,text="Manage By : SAKSHAM JAISWAL\nCOLLEGE RESULT MANAGEMENT SYSTEM\nContact Us for any Technical Issue:983801XXXX ",font=("goudy old style",12,"bold"),bg="#228B22",fg="BLACK").pack(side=BOTTOM,fill=X)
 # ==============================to import funtions====================
     def add_Course(self):
         self.new_win=Toplevel(self.root)
